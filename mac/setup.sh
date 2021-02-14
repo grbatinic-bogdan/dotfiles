@@ -7,7 +7,7 @@ source mac/brew.sh
 source link-dotfiles.sh
 
 # Install nvm
-source mac/nvm.sh
+source nvm.sh
 
 # Configure MacOS defaults.
 # You only want to run this once during setup. Additional runs may reset changes you make manually.

@@ -13,7 +13,7 @@ brew upgrade
 BREW_PREFIX=$(brew --prefix)
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install useful binaries.
 brew install ack
@@ -26,19 +26,19 @@ brew install tree
 brew tap homebrew/cask
 
 ## Apps I use
-brew cask install 1password
-brew cask install google-chrome #Chrome
-brew cask install kap
-brew cask install toggl-track
-brew cask install skype
-brew cask install slack
-brew cask install spotify
-brew cask install microsoft-teams
-brew cask install visual-studio-code
-brew cask install postico
-brew cask install docker
-brew cask install insomnia
-brew cask install vlc
+brew install --cask 1password
+brew install --cask google-chrome #Chrome
+brew install --cask kap
+brew install --cask toggl-track
+brew install --cask skype
+brew install --cask slack
+brew install --cask spotify
+brew install --cask microsoft-teams
+brew install --cask visual-studio-code
+brew install --cask postico
+brew install --cask docker
+brew install --cask insomnia
+brew install --cask vlc
 
 # Remove outdated versions from the cellar.
 brew cleanup

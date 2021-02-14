@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Set name of the theme to load.
 ZSH_THEME="robbyrussell"
 
@@ -12,8 +15,7 @@ plugins=(
   docker
   docker-compose
   npm
-  zsh-autosuggestions
-  zsh-syntax-highlighting
+  zsh-autosuggestions  
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -31,7 +33,14 @@ export MACHINE
 # Source aliases
 # For a full list of active aliases, run `alias`.
 if [[ "$MACHINE" == "Mac" ]];then
-  PROJECT_ROOT='/Users/bgrb/projects/dotfiles'
+  PROJECT_ROOT='/Users/bogdan.grbatinic@futurice.com/projects/dotfiles'
   source "$PROJECT_ROOT/env/aliases-shared.sh"
   source "$PROJECT_ROOT/env/aliases-mac.sh"
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# enable zsh-syntax-highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
