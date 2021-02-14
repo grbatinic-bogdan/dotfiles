@@ -1,11 +1,10 @@
-# Device installation scripts for Mac and Windows (WSL)
+# Device installation scripts for Mac
 
-This repository was inspired by [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) repository. Although I copied many things from him, I also deleted many things to suit my custom installation. Use this at your own risk!
+Forked and heavily modified to my own tastes and needs from [Zell's dotfiles repository](https://github.com/zellwk/dotfiles)
 
-Here are the installation instructions for Mac and Windows (WSL)
+Use at your own risk
+
+Here are the installation instructions for Mac
 
 - [Mac instructions](mac.md)
-- [Windows (WSL) instructions](windows.md)
-
-Have a suggestion? [Please let me know!](https://github.com/zellwk/dotfiles/issues)
 

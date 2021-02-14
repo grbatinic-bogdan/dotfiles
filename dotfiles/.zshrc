@@ -2,14 +2,16 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load.
-ZSH_THEME="avit"
+ZSH_THEME="robbyrussell"
 
 # Plugins
 # plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
   git
-  autojump
+  docker
+  docker-compose
+  npm
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -28,16 +30,8 @@ export MACHINE
 
 # Source aliases
 # For a full list of active aliases, run `alias`.
-if [[ "$MACHINE" == "Linux" ]];then
-  PROJECT_ROOT='/mnt/c/Users/zellw/projects/dotfiles'
-  source "$PROJECT_ROOT/env/aliases-shared.sh"
-  source "$PROJECT_ROOT/env/aliases-linux.sh"
-  source "$PROJECT_ROOT/env/exports.sh"
-  source "$PROJECT_ROOT/env/functions.sh"
-elif [[ "$MACHINE" == "Mac" ]]; then
-  PROJECT_ROOT='/Users/zellwk/projects/dotfiles'
+if [[ "$MACHINE" == "Mac" ]];then
+  PROJECT_ROOT='/Users/bgrb/projects/dotfiles'
   source "$PROJECT_ROOT/env/aliases-shared.sh"
   source "$PROJECT_ROOT/env/aliases-mac.sh"
-  source "$PROJECT_ROOT/env/exports.sh"
-  source "$PROJECT_ROOT/env/functions.sh"
 fi
